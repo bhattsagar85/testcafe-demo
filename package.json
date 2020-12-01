@@ -1,0 +1,24 @@
+{
+  "name": "test-cafe-ruum-project",
+  "version": "1.0.0",
+  "description": "Code challenge project",
+  "main": "index.js",
+  "scripts": {
+    "testcafe": "./node_modules/.bin/testcafe",
+    "e2e": "npm run testcafe ./e2e/src/rumm-app/test/*.e2e.ts --selector-timeout 100000",
+    "e2e:chrome": "npm run testcafe chrome ./e2e/src/rumm-app/test/*.e2e.ts --selector-timeout 100000",
+    "e2e:chrome-headless": "npm run testcafe chrome:headless ./e2e/src/rumm-app/test/*.e2e.ts --selector-timeout 100000",
+    "e2e:firefox": "npm run testcafe firefox ./e2e/src/rumm-app/test/*.e2e.ts --selector-timeout 100000",
+    "e2e:safari": "npm run testcafe safari ./e2e/src/rumm-app/test/*.e2e.ts --selector-timeout 100000 -s takeOnFails=true/",
+    "debug": "testcafe chrome ./e2e/src/rumm-app/test/*.e2e.ts"
+  },
+  "author": "Sagar Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.6.0",
+    "testcafe": "^1.9.4",
+    "testcafe-reporter-html": "^1.4.6",
+    "testcafe-reporter-trx": "^1.0.0"
+  }
+}

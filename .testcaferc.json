@@ -1,0 +1,17 @@
+{
+  "browsers": [
+    "chrome"
+  ],
+  "reporter":[
+    { "name": "spec" },
+    {
+      "name": "html",
+      "output": "output/reports/report.html"
+    }
+  ],
+  "screenshots": {
+    "path": "output/screenshots",
+    "takeOnFails": true,
+    "pathPattern": "failedTestImages/${DATE}_${TIME}/${FIXTURE}/${FILE_INDEX}.png"
+  }
+}
