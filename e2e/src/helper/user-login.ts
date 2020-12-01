@@ -1,7 +1,7 @@
 import {Role} from 'testcafe'
-import {appUrl, password, userName} from "../rumm-app/config";
-import {LoginPage} from "../rumm-app/page/login-page";
-import {MyStore} from "../rumm-app/page/my-store";
+import {appUrl, password, userName} from "../automation-practice-app/config";
+import {LoginPage} from "../automation-practice-app/page/login-page";
+import {MyStore} from "../automation-practice-app/page/my-store";
 
     const loginPage = new LoginPage();
     const myStorePage = new MyStore();
